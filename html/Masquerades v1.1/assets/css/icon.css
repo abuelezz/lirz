@@ -1,0 +1,283 @@
+﻿[class^="iconweb-"],
+[class*=" iconweb-"] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  *margin-left: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url(img/Icon.png);
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+[class^="iconweb-"]:first-child,
+[class*=" iconweb-"]:first-child {
+  *margin-left: 0;
+}
+
+[class^="iconweb-"].large ,
+[class*=" iconweb-"].large {
+    height:40px;
+    width:40px;
+}
+
+.iconweb-froum {
+  background-position: 0      0;
+}
+
+.iconweb-video {
+  background-position: -30px      0;
+}
+
+.iconweb-headphone {
+  background-position: -60px      0;
+}
+
+.iconweb-image {
+  background-position: -90px      0;
+}
+
+.iconweb-texts {
+  background-position: -120px      0;
+}
+
+.iconweb-mycity {
+  background-position: -150px      0;
+}
+
+.iconweb-mywall {
+  background-position: -180px      0;
+}
+
+.iconweb-languages {
+  background-position: -210px      0;
+}
+
+.iconweb-humorous {
+  background-position: -240px      0;
+}
+
+.iconweb-sketches {
+  background-position: -270px      0;
+}
+
+.iconweb-camera {
+  background-position: 0      -30px;
+}
+
+.iconweb-inky {
+  background-position: -30px      -30px;
+}
+
+.iconweb-hispeople {
+  background-position: -60px      -30px;
+}
+
+.iconweb-literature {
+  background-position: -90px      -30px;
+}
+
+.iconweb-movies {
+  background-position: -120px      -30px;
+}
+
+.iconweb-drama {
+  background-position: -150px      -30px;
+}
+
+.iconweb-music {
+  background-position: -180px      -30px;
+}
+
+.iconweb-song {
+  background-position: -210px      -30px;
+}
+
+.iconweb-animal {
+  background-position: -240px      -30px;
+}
+
+.iconweb-sport {
+  background-position: -270px      -30px;
+}
+
+.iconweb-cake {
+  background-position: 0      -60px;
+}
+
+.iconweb-folder {
+  background-position: -30px      -60px;
+}
+
+.iconweb-pencil {
+  background-position: -60px      -60px;
+}
+
+.iconweb-event {
+  background-position: -90px      -60px;
+}
+
+.iconweb-other {
+  background-position: -120px      -60px;
+}
+
+.iconweb-phone {
+  background-position: -150px      -60px;
+}
+
+.iconweb-sun {
+  background-position: -180px      -60px;
+}
+
+.iconweb-star {
+  background-position: -210px      -60px;
+}
+
+.iconweb-man {
+  background-position: -240px      -60px;
+}
+
+.iconweb-women {
+  background-position: -270px      -60px;
+}
+
+.iconweb-cites {
+  background-position: 0      -90px;
+}
+
+.iconweb-car {
+  background-position: -30px      -90px;
+}
+
+.iconweb-crayons {
+  background-position: -60px      -90px;
+}
+
+.iconweb-water {
+  background-position: -90px      -90px;
+}
+
+.iconweb-stories {
+  background-position: -120px      -90px;
+}
+
+.iconweb-messages {
+  background-position: -150px      -90px;
+}
+
+.iconweb-lyrics {
+  background-position: -180px      -90px;
+}
+
+.iconweb-jokes {
+  background-position: -210px      -90px;
+}
+
+.iconweb-quotes {
+  background-position: -240px      -90px;
+}
+
+.iconweb-info {
+  background-position: -270px      -90px;
+}
+
+.iconweb-setting {
+  background-position: 0      -120px;
+}
+
+.iconweb-situation {
+  background-position: -30px      -120px;
+}
+
+.iconweb-out {
+  background-position: -60px      -120px;
+}
+
+.iconweb-blue-video {
+  background-position: -90px      -120px;
+}
+
+.iconweb-blue-headphone {
+  background-position: -120px      -120px;
+}
+
+.iconweb-blue-image {
+  background-position: -150px      -120px;
+}
+
+.iconweb-blue-text {
+  background-position: -180px      -120px;
+}
+
+.iconweb-blue-hispeople {
+  background-position: -210px      -120px;
+}
+
+.iconweb-blue-drama {
+  background-position: -240px      -120px;
+}
+
+.iconweb-blue-abuses {
+  background-position: -270px      -120px;
+}
+
+.iconweb-comment {
+  background-position: -0px      -150px;
+}
+
+.iconweb-globe {
+  background-position: -30px      -150px;
+}
+
+.iconweb-friend {
+  background-position: -60px      -150px;
+}
+
+.iconweb-view {
+  background-position: -90px      -150px;
+}
+
+.iconweb-good {
+  background-position: -120px      -150px;
+}
+
+.iconweb-most {
+  background-position: -150px      -150px;
+}
+
+.iconweb-owner {
+  background-position: -180px      -150px;
+}
+
+.iconweb-flag-arabic{
+    background-position: -210px      -150px;
+}
+
+.iconweb-flag-english{
+    background-position: -240px      -150px;
+}
+
+.iconweb-flag-france{
+    background-position: -270px      -150px;
+}
+
+.iconweb-about {
+  background-position: 0      -180px;
+}
+
+.iconweb-conditions {
+  background-position: -40px      -180px;
+}
+
+.iconweb-contact {
+  background-position: -80px      -180px;
+}
+
+.iconweb-howto {
+  background-position: -120px      -180px;
+}
+
+.iconweb-privacy {
+  background-position: -160px      -180px;
+}

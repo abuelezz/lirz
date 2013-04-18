@@ -150,21 +150,13 @@
             interval: 0
         });
     }
-
-    var loadding = function () {
-        $(window).load(function () {
-            $('.addthis').css('display', 'block')
-            handleTooltip()
-        });
-    }
-
+    
     return {
         init: function () {
-            loadding();
-
             carousel();
             handleComment();
             handleScrollers();
+            handleTooltip();
             handlePopover();
             handleSidebar();
         }

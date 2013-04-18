@@ -628,9 +628,22 @@ header .arrow .menu-icon li a:hover{
     .top-nav .user > .menu-icon > li > a > .box{
         color:#3b3841;
     }
+    
+    .top-nav .user > .menu-icon > li hr{
+        margin-bottom:10px;
+        margin-top:10px;
+    }
 
     .top-nav .user > .menu-icon > li .situation .box{
         margin-right:5px;
+    }
+
+    .top-nav .user > .menu-icon > li:first-child{
+        margin-top:10px;
+    }
+
+    .top-nav .user > .menu-icon > li:last-child{
+        margin-bottom:10px;
     }
 
 .top-nav .user .situation{

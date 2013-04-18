@@ -454,7 +454,7 @@
     var $this = $(this), href
       , $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
 
-    if ($target.selector == '#')
+    if ($target.selector.replace(/(.)|(#)/, '') == '')
         $target = $this.parent();
 
     var options = $.extend({}, $target.data(), $this.data())
@@ -627,12 +627,17 @@
 
   $(document).on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
     var $this = $(this), href
-      , target = $this.attr('data-target')
+      , $target = $($this.attr('data-target')
         || e.preventDefault()
-        || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') //strip for ie7
-      , option = $(target).data('collapse') ? 'toggle' : $this.data()
-    $this[$(target).hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
-    $(target).collapse(option)
+        || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
+
+    if ($target.selector.replace(/(.)|(#)/, '') == '')
+        $target = $this.parent().find('.collapse');
+
+    var option = $target.data('collapse') ? 'toggle' : $this.data()
+
+    $this[$target.hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
+    $target.collapse(option)
   })
 
 }(window.jQuery);/* ============================================================
@@ -689,7 +694,31 @@
       clearMenus()
 
       if (!isActive) {
-        $parent.toggleClass('open')
+          $parent.toggleClass('open')
+          var animation = $parent.children('.animation-drop')
+          if (animation.length > 0) {
+              if (!animation.hasClass('width')) {
+                  animation.css('height', animation[0].scrollHeight)
+                  animation.one($.support.transition.end, function () {
+                      animation.css('overflow', 'visible')
+                      animation.removeClass('animation-drop')
+                        ['height']('auto')
+                        [0].offsetWidth
+                      animation.addClass('animation-drop')
+                  })
+              }
+              else
+              {
+                  animation.css('width', animation[0].clientWidth)
+                  animation.one($.support.transition.end, function () {
+                      animation.css('overflow', 'visible')
+                      animation.removeClass('animation-drop')
+                        ['width']('auto')
+                        [0].offsetHeight
+                      animation.addClass('animation-drop')
+                  })
+              }
+          }
       }
 
       $this.focus()
@@ -736,7 +765,7 @@
       $items
         .eq(index)
         .focus()
-    }
+  }
 
   }
 
@@ -744,8 +773,37 @@
       if (event != null)
           if ($(event.target).data('toggle') == 'collapse') return
 
-    $(toggle).each(function () {
-        getParent($(this)).removeClass('open')
+      $(toggle).each(function () {
+
+        var $parent = getParent($(this)),
+        animation = $parent.children('.animation-drop');
+        if (animation.length > 0 && $parent.hasClass('open')) {
+            if (!animation.hasClass('width')) {
+                animation.removeClass('animation-drop')
+                ['height'](animation[0].scrollHeight)
+                [0].offsetWidth
+                    animation.addClass('animation-drop')
+
+                    animation.css('height', 0);
+            }
+            else
+            {
+                animation.removeClass('animation-drop')
+                ['width'](animation[0].clientWidth)
+                [0].offsetWidth
+                animation.addClass('animation-drop')
+
+                animation.css('width', 0);
+            }
+
+            animation.css('overflow', 'hidden');
+            $.support.transition ? animation.one($.support.transition.end, function () {
+                $parent.removeClass('open')
+            }) : $parent.removeClass('open');
+        }
+        else {
+            $parent.removeClass('open')
+        }
     })
   }
 

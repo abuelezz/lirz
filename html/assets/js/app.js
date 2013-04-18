@@ -1,12 +1,32 @@
 ﻿var App = function () {
 
     var handleSidebar = function () {
-        var sidebar = $('#sidebar'),
-        sidebarBtn = $('#btn-sidebar');
+        var $sidebar = $('#sidebar'),
+        $sidebarBtn = $('#btn-sidebar');
 
-        sidebarBtn.click(function () {
-            sidebar.toggleClass('on');
+        $sidebarBtn.click(function () {
+            $sidebar.toggleClass('on');
         });
+
+        $('html').on('click.menuopen.data-api', clearMenus)
+        $(document).on('click.menuopen.data-api', '[data-toggle=menuopen]', function () {
+            var isActive = $sidebar.hasClass('open');
+
+            clearMenus();
+
+            if (!isActive) {
+                $sidebar.toggleClass('open');
+                $(this).parent().toggleClass('open');
+            }
+        })
+
+        function clearMenus() {
+            $sidebar.removeClass('open');
+            $('[data-toggle=menuopen]').each(function () {
+                var $toggle = $(this).parent();
+                $toggle.removeClass('open');
+            })
+        }
     }
 
     var handleTooltip = function () {
@@ -95,7 +115,6 @@
             });
         });
     }
-
 
     //var handleTooltip = function () {
     //    if (!jQuery().tooltipster) {

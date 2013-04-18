@@ -547,4 +547,5 @@ ul.icons li [class*=" icon-"] {
 .icon-soundcloud:before           { content: "\f121"; }
 .icon-add-user:before             { content: "\f122"; }
 .icon-city:before                 { content: "\f123"; }
-.icon-users:before                 { content: "\f124"; }
+.icon-users:before                { content: "\f124"; }
+.icon-angle-square-down:before    { content: "\f125"; }

@@ -89,7 +89,7 @@ ul.menu-icon, ul{
 }
 
 .menu-icon li .menu-child {
-    /*display:none;*/
+    display:none;
     position: absolute;
     top: 0;
     left: auto;
@@ -257,17 +257,26 @@ ul.menu-icon, ul{
 }
 
 .sidebar-inner{
+    overflow:hidden;
     position:absolute;
     height:100%;
     width:170px;
     background-color:#ecedec;
     z-index:900;
-    -webkit-transition: right .5s ease-in-out;
-    -moz-transition: right .5s ease-in-out;
-    -ms-transition: right .5s ease-in-out;
-    -o-transition: right .5s ease-in-out;
-    transition: right .5s ease-in-out;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
+    -o-transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
+    -webkit-transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
+    transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
 }
+
+.sidebar-inner.open{
+    width:342px;
+}
+
 .sidebar-inner.on {
     right:0;
 }
@@ -344,6 +353,7 @@ ul.menu-icon, ul{
 
     .sidebar-inner .menu-icon > li.open > a{
         background-color:transparent;
+        border-left: 1px solid #fff;
     }
 
     .sidebar-inner .menu-icon > li.open{
@@ -352,9 +362,9 @@ ul.menu-icon, ul{
         border-bottom: 1px solid #005170;
         border-top:1px solid #005170;
     }
-    .sidebar-inner .menu-icon > li.open > a{
-        border-left: 1px solid #fff;
-    }
+            .sidebar-inner .menu-icon > li.open .menu-child{
+                display:block;
+            }
 
     .sidebar-inner .menu-icon > li.languages .menu-child li a{
         text-transform:uppercase;
@@ -539,6 +549,7 @@ header .arrow{
         text-decoration:none;
         color:#fff;
         display:block;
+        font-size:14px;
     }
 
     header .arrow .menu-icon {
@@ -616,6 +627,7 @@ header .arrow .menu-icon li a:hover{
 
 .top-nav .user > .menu-icon{
     border:1px solid #00a3e0;
+    border-top:none;
     min-width:210px;
 }
 
@@ -732,9 +744,8 @@ header .arrow .menu-icon li a:hover{
 
 .my-city .menu-icon{
     padding:0;
-    border:1px solid #00a3e0; 
+    border:1px solid #00a3e0;
     border-top:none;
-    margin-top:-2px;
 }
 
 .my-city .menu-icon > li > a{
@@ -815,6 +826,7 @@ header .arrow .menu-icon li a:hover{
         min-width: 350px;
         border:1px solid #005170;
         border-top:none;
+        margin-top:0;
     }
 
     .notify .scroller .menu-icon{
@@ -844,10 +856,6 @@ header .arrow .menu-icon li a:hover{
     left: 67px !important;
 }
 
-.messages > .dropdown-menu {
-    margin-top:-2px;
-}
-
 .notifications > .dropdown-menu:before {
     left: 37px !important;
 }
@@ -856,20 +864,12 @@ header .arrow .menu-icon li a:hover{
     left: 38px !important;
 }
 
-.notifications > .dropdown-menu {
-    margin-top:-2px;
-}
-
 .friends > .dropdown-menu:before {
     left: 8px !important;
 }
 
 .friends > .dropdown-menu:after {
     left: 9px !important;
-}
-
-.friends > .dropdown-menu {
-    margin-top:-2px;
 }
 
 .header a, .topic-name a, .topic-stats a, .topic-name a{

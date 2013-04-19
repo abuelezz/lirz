@@ -549,3 +549,6 @@ ul.icons li [class*=" icon-"] {
 .icon-city:before                 { content: "\f123"; }
 .icon-users:before                { content: "\f124"; }
 .icon-angle-square-down:before    { content: "\f125"; }
+.icon-angle-square-up:before      { content: "\f126"; }
+.icon-angle-square-left:before    { content: "\f127"; }
+.icon-angle-square-right:before   { content: "\f128"; }

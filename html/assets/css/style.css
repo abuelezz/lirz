@@ -632,9 +632,12 @@ header .arrow .menu-icon li a:hover{
 }
 
     .top-nav .user > .menu-icon > li a {
-        padding-top:3px;
-        padding-bottom:3px;
+        padding-top:0;
+        padding-bottom:0;
         color:#3b3841;
+    }
+    .top-nav .user > .menu-icon > li > a:hover {
+        background-color:#e2dee7;
     }
 
     .top-nav .user > .menu-icon > li > a > .box{

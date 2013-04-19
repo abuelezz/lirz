@@ -7,26 +7,22 @@
         $sidebarBtn.click(function () {
             $sidebar.toggleClass('on');
         });
-
-        $('html').on('click.menuopen.data-api', clearMenus)
+        $('html').on('click.menuopen.data-api', function () {
+            $('[data-toggle=menuopen]').each(function () {
+                $(this).parent().removeClass('open');
+            })
+            $sidebar.removeClass('open');
+        })
         $(document).on('click.menuopen.data-api', '[data-toggle=menuopen]', function () {
             var isActive = $sidebar.hasClass('open');
 
-            clearMenus();
+            $sidebar.removeClass('open');
 
             if (!isActive) {
                 $sidebar.toggleClass('open');
-                $(this).parent().toggleClass('open');
+                $(this).parent().addClass('open');
             }
         })
-
-        function clearMenus() {
-            $sidebar.removeClass('open');
-            $('[data-toggle=menuopen]').each(function () {
-                var $toggle = $(this).parent();
-                $toggle.removeClass('open');
-            })
-        }
     }
 
     var handleTooltip = function () {

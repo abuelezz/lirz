@@ -160,6 +160,17 @@
         });
     }
 
+    var handleSelectSituation = function () {
+        $('#user .situation a').click(function () {
+            $('#user [data-toggle=collapse]').toggleClass('skip-hover');
+            var collapse = $('#user .collapse').collapse('toggle');
+        })
+
+        $('#user [data-toggle=collapse]').click(function () {
+            $(this).toggleClass('skip-hover');
+        })
+    }
+
     var carousel = function () {
         $('.carousel').carousel({
             interval: 0
@@ -178,6 +189,7 @@
             loadding();
 
             carousel();
+            handleSelectSituation();
             handleComment();
             handleScrollers();
             handlePopover();

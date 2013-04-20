@@ -628,13 +628,15 @@ header .arrow .menu-icon li a:hover{
 .top-nav .user > .menu-icon{
     border:1px solid #00a3e0;
     border-top:none;
-    min-width:210px;
+    min-width:200px;
 }
 
     .top-nav .user > .menu-icon > li a {
-        padding-top:0;
-        padding-bottom:0;
+        padding:0 4px;
         color:#3b3841;
+    }
+    .top-nav .user > .menu-icon > li a .box{
+        margin-left:0;
     }
     .top-nav .user > .menu-icon > li > a:hover {
         background-color:#e2dee7;
@@ -643,7 +645,10 @@ header .arrow .menu-icon li a:hover{
     .top-nav .user > .menu-icon > li > a > .box{
         color:#3b3841;
     }
-    
+    a.skip-hover:hover{
+        background-color:transparent !important;
+    }
+
     .top-nav .user > .menu-icon > li hr{
         margin-bottom:10px;
         margin-top:10px;
@@ -674,7 +679,7 @@ header .arrow .menu-icon li a:hover{
 }
 
 .situation .box{
-    font-size:10px;
+    font-size:8px;
 }
 
 .situation .available{
@@ -749,20 +754,24 @@ header .arrow .menu-icon li a:hover{
     padding:0;
     border:1px solid #00a3e0;
     border-top:none;
+    right:10px;
+    min-width:130px;
 }
-
+   
 .my-city .menu-icon > li > a{
     font-weight: bold;
     color: #00a3e0;
     border-bottom:1px solid #c6c6c6;
+    padding:2px 4px;
+    font-size:10px;
 }
+    .my-city .menu-icon > li > a .box{
+        margin-left:5px;
+        color: #00a3e0;
+    }
 
 .my-city .menu-icon > li:last-child > a{
     border-bottom:none;
-}
-
-.my-city .menu-icon > li > a .box{
-    color: #00a3e0;
 }
 
 .top-nav .navbar .notify > li > a{
@@ -770,14 +779,16 @@ header .arrow .menu-icon li a:hover{
     padding-right:0;
 }
 
-
 .notify{
     position:relative;
 }
-
+.notify .tooltip.bottom .tooltip-arrow{
+    border-bottom-color:rgba(59, 56, 65, 0.88);
+}
     .notify .tooltip-inner {
-        padding-top:2px;
-        padding-bottom:2px;
+        padding: 2px 0 0 0;
+        width: 20px;
+        background-color:rgba(59, 56, 65, 0.88);
     }
 
 .notify .message{
@@ -1021,6 +1032,10 @@ header .arrow .menu-icon li a:hover{
     border-bottom:solid 1px #fff;
     text-decoration:none !important;
 }
+    .topic-comment .get-comment i {
+        font-size:16px;
+        margin-left:4px;
+    }
 
 .topic-comment li .message{
     float:right;

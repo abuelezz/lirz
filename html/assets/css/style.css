@@ -14,15 +14,22 @@ a, a:visited, a:focus, a:active, a:hover{
     outline:0 none !important;
 }
 
-div, input, select, textarea, span, img, table, td, th, p, a, button, ul, li {
+div:not(.slimScrollBar):not(.tooltip-inner), input, select, textarea, span, img, table, td, th, p, a, button, ul, li {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
 }
 
+.btn-mini {
+    padding: 0 8px;
+    font-size: 12px;
+    height:23px;
+    -webkit-text-shadow: none;
+    text-shadow: none;
+}
+
 .tooltip-inner{
     padding: 4px 8px;
-    border-radius: 4px !important;
 }
 
 .menu-icon {
@@ -132,13 +139,13 @@ ul.menu-icon, ul{
 }
 
 .menu-icon .menu-header a{
-    line-height:30px;
+    line-height:35px;
 }
 
 .menu-icon .menu-header h3 {
     margin:0;
     font-size:10px;
-    line-height:30px;
+    line-height:35px;
     color:#00a3e0;
     white-space:nowrap;
 }
@@ -155,8 +162,7 @@ ul.menu-icon, ul{
 }
 
 .menu-icon .menu-footer{
-    margin-bottom: -5px;
-    padding: 5px;
+    padding: 6px 5px;
     font-size:12px;
 }
 
@@ -617,6 +623,7 @@ header .arrow .menu-icon li a:hover{
 
 .top-nav .user > a{
     padding-right:0;
+    min-width:125px;
 }
 
 .top-nav .user .avatar{
@@ -854,6 +861,10 @@ header .arrow .menu-icon li a:hover{
     .notify .menu-icon .menu-footer {
         background-color: #005170;
         text-align: center;
+    }
+
+    .notify .menu-icon .menu-footer .btn{
+        margin-top:0;
     }
 
     .notify .menu-icon .menu-header {

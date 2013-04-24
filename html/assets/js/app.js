@@ -105,7 +105,7 @@
                 position: 'left',
                 size: '6px',
                 start: $(this).data('start') || 'top',
-                color: '#a1b2bd',
+                color: 'rgba(0, 0, 0,0.8)',
                 height: $(this).data('height'),
                 disableFadeOut: true
             });

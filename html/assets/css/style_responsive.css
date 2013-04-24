@@ -1,5 +1,11 @@
 ﻿@media (min-width: 1200px) {
-    
+    .page-content .row-fluid .span6{
+        margin-right:2.34375%;
+        width:48.828125%;
+    }
+    .page-content .row-fluid .span6:first-child{
+        margin-right:0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -20,8 +26,6 @@
     footer .offset-right {
         width: 724px;
     }
-
-    
 }
 
 @media (max-width: 767px) {

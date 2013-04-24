@@ -783,6 +783,9 @@
             $parent.removeClass('open')
         }
 
+        $parent.find('.collapse').each(function () {
+            $(this).removeClass('in').css('height', '0')
+        })
     })
   }
 

@@ -782,6 +782,9 @@
         else {
             $parent.removeClass('open')
         }
+        $parent.find('[data-toggle=collapse]').each(function () {
+            $(this).removeClass('skip-hover')
+        })
 
         $parent.find('.collapse').each(function () {
             $(this).removeClass('in').css('height', '0')

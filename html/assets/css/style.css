@@ -116,6 +116,10 @@ ul.menu-icon, ul{
 .menu-icon li .control{
     float:left;
     line-height:50px;
+    margin-left:5px;
+}
+.menu-icon li .control .btn:first-child{
+    margin-left:3px;
 }
 
 /*.menu-icon > li:hover .menu-child{
@@ -387,6 +391,13 @@ ul.menu-icon, ul{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     white-space:nowrap;
+    line-height:25px;
+}
+
+.sidebar-inner .menu-child > li > a .box{
+    min-height:25px;
+    min-width:25px;
+    line-height:25px;
 }
 
 .sidebar-inner .menu-child {
@@ -652,8 +663,8 @@ header .arrow .menu-icon li a:hover{
     .top-nav .user > .menu-icon > li > a > .box{
         color:#3b3841;
     }
-    a.skip-hover:hover{
-        background-color:transparent !important;
+    .top-nav .user > .menu-icon > li > a.skip-hover{
+        background-color:#e2dee7 !important;
     }
 
     .top-nav .user > .menu-icon > li hr{

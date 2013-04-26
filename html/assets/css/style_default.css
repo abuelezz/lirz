@@ -1,8 +1,10 @@
 ﻿.btn {
-    background-color:#fff;
-    background-image:none;
-    border-color:#dedede;
-    color:#00a3e0;
+    background-color: #fff;
+    background-image: none;
+    border-color: #dedede;
+    color: #00a3e0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .btn:hover,

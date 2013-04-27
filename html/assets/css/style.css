@@ -291,7 +291,7 @@ ul.menu-icon, ul{
 }
 
 .sidebar-inner.open{
-    width:322px;
+    width:332px;
 }
 
 .sidebar-inner.on {
@@ -391,7 +391,7 @@ ul.menu-icon, ul{
     color: #3c3c3c;
     font-weight:bold;
     padding: 0;
-    min-width: 110px;
+    min-width: 120px;
     text-align: center;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -817,7 +817,7 @@ header .arrow .menu-icon li a:hover{
     position:relative;
 }
 
-.notify > li > a > i{
+.notify > li > a > [class^="icon-metroui-"]{
     width:30px !important;
     height:35px;
     line-height:40px;

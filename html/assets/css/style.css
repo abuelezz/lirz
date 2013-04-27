@@ -391,7 +391,6 @@ ul.menu-icon, ul{
     padding: 0;
     min-width: 130px;
     text-align: center;
-    padding-left: 15px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -403,6 +402,7 @@ ul.menu-icon, ul{
     min-height:25px;
     min-width:25px;
     line-height:25px;
+	margin-left:0;
 }
 
 .sidebar-inner .menu-child {
@@ -863,6 +863,7 @@ header .arrow .menu-icon li a:hover{
     .notify .menu-icon {
         min-width: 350px;
         border:1px solid #005170;
+		border-bottom:none;
         border-top:none;
         margin-top:0;
     }

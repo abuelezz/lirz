@@ -289,7 +289,7 @@ ul.menu-icon, ul{
 }
 
 .sidebar-inner.open{
-    width:342px;
+    width:322px;
 }
 
 .sidebar-inner.on {
@@ -389,7 +389,7 @@ ul.menu-icon, ul{
     color: #3c3c3c;
     font-weight:bold;
     padding: 0;
-    min-width: 130px;
+    min-width: 110px;
     text-align: center;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -807,7 +807,7 @@ header .arrow .menu-icon li a:hover{
     position:relative;
 }
 
-.notify i{
+.notify > li > a > i{
     width:30px !important;
     height:35px;
     line-height:40px;

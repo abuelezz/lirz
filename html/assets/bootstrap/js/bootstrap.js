@@ -762,33 +762,35 @@
           if ($(event.target).data('toggle') == 'collapse') return
           if ($($(event.target).parent()).data('toggle') == 'collapse') return
       }
+      var $current = null;
       $(toggle).each(function () {
-        var $parent = getParent($(this)),
-        animation = $parent.children('.animation-drop')
-        if (animation.length > 0 && $parent.hasClass('open')) {
+          var $parent = getParent($(this)),
+              animation = $parent.children('.animation-drop')
+            if (animation.length > 0 && $parent.hasClass('open')) {
 
-            animation.removeClass('animation-drop')
-            ['height'](animation[0].scrollHeight)
-            [0].offsetWidth
-            animation.addClass('animation-drop')
+                animation.removeClass('animation-drop')
+                ['height'](animation[0].scrollHeight)
+                [0].offsetWidth
+                animation.addClass('animation-drop')
 
-            animation.css('height', 0)
+                animation.css('height', 0)
 
-            animation.css('overflow', 'hidden')
-            $.support.transition ? animation.one($.support.transition.end, function () {
+                animation.css('overflow', 'hidden')
+                $.support.transition ? animation.one($.support.transition.end, function () {
+                    $parent.removeClass('open')
+                }) : $parent.removeClass('open')
+            }
+            else {
                 $parent.removeClass('open')
-            }) : $parent.removeClass('open')
-        }
-        else {
-            $parent.removeClass('open')
-        }
-        $parent.find('[data-toggle=collapse]').each(function () {
-            $(this).removeClass('skip-hover')
-        })
+            }
+            $parent.find('[data-toggle=collapse]').each(function () {
+                $(this).removeClass('skip-hover')
+            })
 
-        $parent.find('.collapse').each(function () {
-            $(this).removeClass('in').css('height', '0')
-        })
+            $parent.find('.collapse').each(function () {
+                $(this).removeClass('in').css('height', '0')
+            })
+
     })
   }
 

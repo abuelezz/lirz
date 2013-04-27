@@ -8,20 +8,19 @@
             $sidebar.toggleClass('on');
         });
         $('html').on('click.menuopen.data-api', function () {
+            $sidebar.removeClass('open')
             $('[data-toggle=menuopen]').each(function () {
                 $(this).parent().removeClass('open');
-            })
-            $sidebar.removeClass('open');
+            });
         })
+
         $(document).on('click.menuopen.data-api', '[data-toggle=menuopen]', function () {
-            var isActive = $sidebar.hasClass('open');
-
-            $sidebar.removeClass('open');
-
-            if (!isActive) {
+            var $this = $(this).parent()
+            setTimeout(function () {
                 $sidebar.toggleClass('open');
-                $(this).parent().addClass('open');
-            }
+                $this.addClass('open');
+            }, $sidebar.css('transition-duration'));
+            
         })
     }
 

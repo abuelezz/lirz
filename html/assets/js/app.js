@@ -7,12 +7,12 @@
         $sidebarBtn.click(function () {
             $sidebar.toggleClass('on');
         });
-
-        $(document).on('click.menuopen.data-api', function () {
+        $('html').on('click', ':not(.sidebar-inner)', function () {
             clearMenus()
         })
-
-        $(document).on('click.menuopen.data-api', '[data-toggle=menuopen]', function () {
+        $(document).on('click.sidebar.data-api', function () {
+            clearMenus()
+        }).on('click.sidebar.data-api', '[data-toggle=menuopen]', function () {
             var $this = $(this).parent()
             var isActive = $this.hasClass('open');
 
@@ -23,7 +23,6 @@
                 $sidebar.toggleClass('open');
                 $this.addClass('open');
             }, $sidebar.css('transition-duration'));
-            
         })
 
         function clearMenus() {

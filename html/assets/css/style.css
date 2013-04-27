@@ -118,6 +118,11 @@ ul.menu-icon, ul{
     line-height:50px;
     margin-left:5px;
 }
+
+.menu-icon li .control .btn-mini{
+	font-size:10px;
+}
+
 .menu-icon li .control .btn:first-child{
     margin-left:3px;
 }
@@ -166,7 +171,7 @@ ul.menu-icon, ul{
 }
 
 .menu-icon .menu-footer{
-    padding: 6px 5px;
+    padding: 7px 5px;
     font-size:12px;
 }
 
@@ -405,6 +410,7 @@ ul.menu-icon, ul{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    border-bottom:none;
 }
 
 .sidebar-inner .menu-child > li {
@@ -1091,6 +1097,7 @@ header .arrow .menu-icon li a:hover{
 hr{
     border-top-color:#c5cee0;
     margin: 10px 0;
+    border-bottom:none;
 }
 
 .topic-others .other-item{

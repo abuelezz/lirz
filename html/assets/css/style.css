@@ -412,10 +412,10 @@ ul.menu-icon, ul{
     margin-right:20px;
 }
     .sidebar-inner .menu-child > li:first-child {
-        margin-top:20px;
+        margin-top:25px;
     }
     .sidebar-inner .menu-child > li:last-child {
-        margin-bottom:20px;
+        margin-bottom:25px;
     }
 
     .sidebar-inner .menu-icon.sub-menu > li > a:hover {
@@ -841,7 +841,7 @@ header .arrow .menu-icon li a:hover{
     }
 
     .notify .menu-icon > li > .item .name{
-        color:#0072c6;
+        color:#00a3e0;
         font-size:11px;
         line-height:15px;
         white-space:nowrap;
@@ -851,7 +851,7 @@ header .arrow .menu-icon li a:hover{
     }
 
     .notify .menu-icon > li > .item.new .name, .notify .menu-icon > li > .item.new .message, .notify .menu-icon > li > .item.new .time{
-        color:#0072c6;
+        color:#00a3e0;
     }
 
     .notify .menu-icon {

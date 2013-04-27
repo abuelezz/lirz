@@ -103,7 +103,7 @@
         $('.scroller').each(function () {
             $(this).slimScroll({
                 position: 'left',
-                size: '8px',
+                size: '7px',
                 distance: '5px',
                 start: $(this).data('start') || 'top',
                 color: 'rgba(0, 0, 0,0.8)',

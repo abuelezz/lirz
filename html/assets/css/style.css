@@ -806,6 +806,14 @@ header .arrow .menu-icon li a:hover{
 .notify{
     position:relative;
 }
+
+.notify i{
+    width:30px !important;
+    height:35px;
+    line-height:40px;
+    font-size:16px;
+}
+
 .notify .tooltip.bottom .tooltip-arrow{
     border-bottom-color:rgba(59, 56, 65, 0.88);
 }

@@ -412,7 +412,7 @@ ul.menu-icon, ul{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-bottom:none;
+    border-bottom-color:#dadada;
 }
 
 .sidebar-inner .menu-child > li {
@@ -680,8 +680,8 @@ header .arrow .menu-icon li a:hover{
         margin-top:10px;
     }
 
-    .top-nav .user > .menu-icon > li .situation .box{
-        margin-right:5px;
+    .top-nav .user > .menu-icon > li .situation .box-circle{
+        margin-right:16px;
     }
 
     .top-nav .user > .menu-icon > li:first-child{
@@ -708,16 +708,24 @@ header .arrow .menu-icon li a:hover{
     font-size:8px;
 }
 
+.situation .box-circle{
+    margin: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    float: right;
+}
+
 .situation .available{
-    color:#50ae2c !important;
+    background-color:#50ae2c;
 }
 
 .situation .busy{
-    color:#d24726 !important;
+    background-color:#d24726;
 }
 
 .situation .not-available{
-    color:#9e98a9 !important;
+    background-color:#9e98a9;
 }
 
 .user {

@@ -1188,7 +1188,7 @@ hr{
 
 .topic-others .carousel-control{
     border: none;
-    left: 0;
+    left: -1px;
     top: 0;
     height: 100%;
     width: 14px;
@@ -1202,7 +1202,7 @@ hr{
 }
 
 .topic-others .carousel-control.right{
-    right: 0;
+    right: -1px;
     left: auto;
     border-right:none;
     border-left: 1px solid #f1f1f1;

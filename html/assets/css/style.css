@@ -972,6 +972,11 @@ header .arrow .menu-icon li a:hover{
     margin-bottom:10px;
 }
 
+.multimedia > *{
+	width:100%;
+	height:359px;
+}
+
 .texts .multimedia {
     line-height: 30px;
     font-size: 13px;

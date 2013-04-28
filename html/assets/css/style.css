@@ -967,6 +967,7 @@ header .arrow .menu-icon li a:hover{
 .multimedia{
     width:100%;
     min-height:220px;
+	max-height:359px;
     background-color:#f1f1f1;
     margin-bottom:10px;
 }
@@ -975,7 +976,7 @@ header .arrow .menu-icon li a:hover{
     line-height: 30px;
     font-size: 13px;
     padding: 10px;
-    min-height:358px;
+    min-height:359px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

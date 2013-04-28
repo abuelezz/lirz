@@ -51,19 +51,22 @@
     }
 
     var handleComment = function () {
-        var input = $('input', $('.comment-form'));
-
+        var $input = $('input', $('.comment-form'));
+        $('.control-comment .comments').each(function () {
+            $(this)['height']('auto')['height']($(this).height())
+		})
+			
         var handleClick = function (cont) {
             
-            var list = $('.comments', cont);
-            var form = $('.comment-form', cont);
-            var inputCurrent = $('input', form);
+            var $list = $('.comments', cont);
+            var $form = $('.comment-form', cont);
+            var $inputCurrent = $('input', $form);
 
-            var text = inputCurrent.val();
+            var text = $inputCurrent.val();
             if (text.length == 0) {
                 return;
             }
-
+			
             var time = new Date();
             var time_str = time.toString('MMM dd, yyyy HH:MM');
             var tpl = '';
@@ -84,12 +87,14 @@
             tpl += '</div>'
 
             tpl += '</li>';
+			
+            var msg = $list.append(tpl);
+            $list['height']($list[0].scrollHeight)
 
-            var msg = list.append(tpl);
-            inputCurrent.val("");
+            $inputCurrent.val("");
         }
 
-        input.keypress(function (e) {
+        $input.keypress(function (e) {
             if (e.which == 13) {
                 handleClick($(e.target).parents('.control-comment'));
                 return false; //<---- Add this line

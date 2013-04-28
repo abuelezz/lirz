@@ -1022,6 +1022,19 @@ header .arrow .menu-icon li a:hover{
     margin-bottom:0;
 }
 
+.topic-comment .comments{
+    height:0;
+	overflow: hidden;
+    -webkit-transition: height 0.35s;
+    -moz-transition: height 0.35s;
+    -o-transition: height 0.35s;
+    transition: height 0.35s;
+    -moz-transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
+    -o-transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
+    -webkit-transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
+    transition-timing-function: cubic-bezier(0.1,0.9,0.2,1);
+}
+
 .topic-comment .nav li{
     border-top:solid 1px #fff;
     border-bottom:solid 1px #fff;

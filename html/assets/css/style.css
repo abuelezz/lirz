@@ -10,6 +10,12 @@ body {
     font-size:12px;
 }
 
+input, button, select, textarea{
+	font-family: DroidNaskh-Regular, Arial, sans-serif;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	font-size:12px;
+}
 a, a:visited, a:focus, a:active, a:hover{
     outline:0 none !important;
 }
@@ -22,7 +28,7 @@ div:not(.slimScrollBar):not(.tooltip-inner), input, select, textarea, span, img,
 
 .btn-mini {
     padding: 0 8px;
-    font-size: 12px;
+    font-size: 10px;
     height:23px;
     -webkit-text-shadow: none;
     text-shadow: none;
@@ -120,7 +126,6 @@ ul.menu-icon, ul{
 }
 
     .menu-icon li .control .btn-mini {
-        font-size: 12px;
         -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px;
     }

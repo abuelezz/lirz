@@ -991,8 +991,9 @@ header .arrow .menu-icon li a:hover{
 .texts .multimedia p{
     margin-bottom:0;
 }
-.topic-name{
+.topic-name, .topic-stats{
 	height:30px;
+	overflow: hidden;
 }
 .topic-name h3, .topic-stats h3{
     margin:0;

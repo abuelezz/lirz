@@ -7,10 +7,7 @@
         $sidebarBtn.click(function () {
             $sidebar.toggleClass('on');
         });
-        $('html').on('click', ':not(.sidebar-inner)', function () {
-            clearMenus()
-        })
-        $(document).on('click.sidebar.data-api', function () {
+        $('html').on('click.sidebar.data-api', function () {
             clearMenus()
         }).on('click.sidebar.data-api', '[data-toggle=menuopen]', function () {
             var $this = $(this).parent()

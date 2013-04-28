@@ -87,9 +87,6 @@
 
             var msg = list.append(tpl);
             inputCurrent.val("");
-            $('.scroller', cont).slimScroll({
-                scrollTo: list.height()
-            });
         }
 
         input.keypress(function (e) {

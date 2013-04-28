@@ -1076,6 +1076,19 @@ header .arrow .menu-icon li a:hover{
         box-sizing: border-box;
     }
 
+	.topic-comment .comment-form .message input::-webkit-input-placeholder { /* WebKit browsers */
+		color:    #00a3e0;
+	}
+	.topic-comment .comment-form .message input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color:    #00a3e0;
+	}
+	.topic-comment .comment-form .message input::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color:    #00a3e0;
+	}
+	.topic-comment .comment-form .message input:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color:    #00a3e0;
+	}
+	
     .topic-comment .comment-form .user{
         border-left:none;
         padding-left:0;

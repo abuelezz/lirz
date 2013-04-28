@@ -73,7 +73,7 @@
             tpl += '<img class="avatar" alt="" src="assets/img/avatar/avatar_00.jpg" />';
             tpl += '<div class="info">';
             tpl += '<h4 class="name">يوسف العزام</h4>';
-            tpl += '<p class="description"><a href="#">اعجاب</a>/<a href="#">اعجاب</a></p>';
+            tpl += '<span class="description"><a href="#">اعجاب</a>/<a href="#">اعجاب</a></span>';
             tpl += '</div>';
             tpl += '</div>';
             tpl += '<div class="message">';

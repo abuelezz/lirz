@@ -247,7 +247,7 @@ ul.menu-icon, ul{
 }
 
 .wapper-inner{
-    padding: 20px;
+    padding: 19px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -960,6 +960,10 @@ header .arrow .menu-icon li a:hover{
     font-size:13px;
 }
 
+.topic-content{
+	padding-top:10px;
+}
+
 .multimedia{
     width:100%;
     min-height:220px;
@@ -981,7 +985,9 @@ header .arrow .menu-icon li a:hover{
 .texts .multimedia p{
     margin-bottom:0;
 }
-
+.topic-name{
+	height:30px;
+}
 .topic-name h3, .topic-stats h3{
     margin:0;
     line-height:30px;
@@ -1043,7 +1049,7 @@ header .arrow .menu-icon li a:hover{
 
     .topic-comment .comment-form .message input {
         margin-bottom: 0;
-        height: 40px;
+        height: 30px;
         width: 100%;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -1056,7 +1062,7 @@ header .arrow .menu-icon li a:hover{
     }
 
     .topic-comment .user {
-        padding: 5px;
+        padding: 4px;
         float: right;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -1070,16 +1076,17 @@ header .arrow .menu-icon li a:hover{
     .topic-comment .user .name{
        font-weight:normal;
        font-size:11px;
+	   line-height:15px;
     }
 
 .topic-comment .user .avatar{
-    height:40px;
-    width:40px;
+    height:30px;
+    width:30px;
     float:right;
 }
 
 .topic-comment .get-comment{
-    padding:6px;
+    padding: 4px 10px 3px 10px;
     display:block;
     border-bottom:solid 1px #fff;
     text-decoration:none !important;
@@ -1095,14 +1102,15 @@ header .arrow .menu-icon li a:hover{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width:315px;
+    max-width:335px;
     border-right: 1px solid #e4e4e4;
     font-size:11px;
+	line-height: 15px;
 }
 
 .topic-comment .comment-form .message{
-    margin-right:45px;
-    padding:5px;
+    margin-right:35px;
+    padding:4px 5px;
 }
 
     .topic-comment .message > .body {
@@ -1136,11 +1144,11 @@ hr{
     float:right;
     height:40px;
     width:40px;
-    margin-left:20px;
+    margin-left:10px;
 }
 
     .topic-others .other-item .other-inner {
-        padding: 10px 19px;
+        padding: 10px 20px;
         display: inline-block;
         background-color: #f1f1f1;
         width: 100%;
@@ -1150,7 +1158,7 @@ hr{
     }
 
     .topic-others .other-item:first-child .other-inner{
-        padding-right:34px;
+        padding-right:35px;
     }
 
     .topic-others .other-item .other-inner:hover h3, .topic-others .other-item .other-inner:hover .views{

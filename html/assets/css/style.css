@@ -967,8 +967,9 @@ header .arrow .menu-icon li a:hover{
 .header h1{
     margin:0;
     line-height:30px;
-    font-size:20px;
+    font-size:19px;
     float:right;
+	font-weight: normal;
 }
 
 .header h1 > .sub{

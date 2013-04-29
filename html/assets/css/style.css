@@ -1234,10 +1234,11 @@ hr{
 .topic-others .other-item .info .views{
     margin-top:4px;
     display:block;
-    line-height:20px;
+    line-height:14px;
+	font-size:11px;
 }
     .topic-others .other-item .info .views i{
-            font-size:16px;
+		font-size:14px;
     }
 
     .topic-others .carousel {

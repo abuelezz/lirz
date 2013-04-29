@@ -439,7 +439,7 @@ ul.menu-icon, ul{
     }
 
 .top-bar {
-    padding: 10px;
+    padding: 6px 7px;
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -466,7 +466,7 @@ ul.menu-icon, ul{
 
     .top-bar .search .advanced {
         margin-left: 10px;
-        border: solid 1px #d1d2d5;
+        border: solid 1px #c4cde0;
         margin-right: -1px;
         display:inline-block;
     }
@@ -479,8 +479,22 @@ ul.menu-icon, ul{
         .top-bar .search .input-append input {
             height: 25px;
             border-left: none;
-            width:410px;
+            width:355px;
+			border-color:#c4cde0;
         }
+		
+		.top-bar .search .input-append  input::-webkit-input-placeholder { /* WebKit browsers */
+			color:    #de5630;
+		}
+		.top-bar .search .input-append  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color:    #de5630;
+		}
+		.top-bar .search .input-append  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color:    #de5630;
+		}
+		.top-bar .search .input-append  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+			color:    #de5630;
+		}
 
     .top-bar .search .add-on {
         height: 25px;
@@ -488,17 +502,18 @@ ul.menu-icon, ul{
         line-height: 25px;
         background-color: #fff;
         border-right: none;
-        color: #d45031;
+        color: #de5630;
+		border-color:#c4cde0;
     }
 
     .sellect {
-    line-height: 33px;
-    width: 90px;
-    padding-right: 10px;
-    display: block;
-    text-decoration: none !important;
-    color: #000 !important;
-}
+		line-height: 33px;
+		width: 80px;
+		padding-right: 10px;
+		display: block;
+		text-decoration: none !important;
+		color: #000 !important;
+	}
 
     .sellect > i {
         float: left;
@@ -517,7 +532,7 @@ ul.menu-icon, ul{
 
         .top-bar .social ul li {
             float:left;
-            margin-left:3px;
+            margin-left:5px;
         }
 
             .top-bar .social ul li .box {
@@ -1005,9 +1020,10 @@ header .arrow .menu-icon li a:hover{
 .topic-name h3, .topic-stats h3{
     margin:0;
     line-height:30px;
-    font-size:16px;
+    font-size:15px;
     float:right;
     white-space:nowrap;
+	font-weight:normal;
 }
 
 .topic-name h3{
@@ -1211,6 +1227,7 @@ hr{
     margin:0;
     white-space: nowrap;
     color:#333;
+	font-weight:normal;
 }
 
 .topic-others .other-item .info .views{

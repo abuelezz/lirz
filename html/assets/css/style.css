@@ -25,7 +25,9 @@ div:not(.slimScrollBar):not(.tooltip-inner), input, select, textarea, span, img,
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
 }
-
+.addthis_button_tweet > *{
+    width:81px !important;
+}
 .btn-mini {
     padding: 0 8px;
     font-size: 10px;

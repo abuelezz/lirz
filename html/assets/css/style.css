@@ -253,6 +253,10 @@ ul.menu-icon, ul{
     background-color:#fff;
 }
 
+.wapper-inner:first-child{
+	padding-top:15px;
+}
+
 .wapper-inner{
     padding: 19px;
     -moz-box-sizing: border-box;
@@ -531,10 +535,12 @@ ul.menu-icon, ul{
     }
 
         .top-bar .social ul li {
-            float:left;
+            float:right;
             margin-left:5px;
         }
-
+		.top-bar .social ul li:last-child {
+			margin-left:3px;
+		}
             .top-bar .social ul li .box {
                 margin-left: 0;
             }
@@ -961,7 +967,7 @@ header .arrow .menu-icon li a:hover{
 }
 
 .header{
-    width:35px;
+    height:35px;
 }
 
 .header h1{

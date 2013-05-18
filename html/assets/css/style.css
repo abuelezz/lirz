@@ -546,14 +546,14 @@ header .arrow .menu-icon li .item > .large.box + .info span {
 .user .avatar {
 	width: 35px; height: 35px; float: right; display: block;
 }
-.user .info {
-	margin-right: 6.5px; float: right;
-}
 .user .info .description {
-	line-height: 15px; font-size: 10px; display: block;
+	line-height: 15px; font-size: 9px; display: block;
 }
 .user .info .name {
-	margin: 0px; line-height: 20px; font-size: 14px; white-space: nowrap;
+	margin: 0px; line-height: 20px; font-size: 12px; white-space: nowrap;
+}
+.user .info {
+	margin-right: 6.5px; float: right;
 }
 .user .info .in-city {
 	margin: 0px;
@@ -730,7 +730,7 @@ header .arrow .menu-icon li .item > .large.box + .info span {
 	margin-left: 0px;
 }
 .topic-comment .comments {
-	transition:height 0.35s cubic-bezier(0.1, 0.9, 0.2, 1); height: 0px; overflow: hidden; 
+	transition:height 0.35s cubic-bezier(0.1, 0.9, 0.2, 1); height: 0px; overflow: hidden;
 }
 .topic-comment {
 	width: 460px; color: rgb(102, 102, 102); background-color: rgb(241, 241, 241);
@@ -765,11 +765,11 @@ header .arrow .menu-icon li .item > .large.box + .info span {
 .topic-comment .user {
 	padding: 3px 3px 3px 6.5px; text-align: center; margin-left: -1px; border-left-color: rgb(228, 228, 228); border-left-width: 1px; border-left-style: solid; float: right; max-width: 140px; box-sizing: border-box;
 }
+.topic-comment .user .name {
+	line-height: 15px; font-weight: normal;
+}
 .topic-comment .comment-form .user {
 	padding-left: 0px; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
-}
-.topic-comment .user .name {
-	line-height: 15px; font-size: 13.2px; font-weight: normal;
 }
 .topic-comment .get-comment {
 	padding: 5px 10px; height: 20px; text-decoration: none !important; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; display: block;
